@@ -1,0 +1,1675 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <!--变量定义-->
+  <!--head 里的 meta 标签-->
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta charset="utf-8"/>
+  <meta content="10210420621156375" property="qc:admins"/>
+  <meta content="webkit" name="renderer"/>
+  <meta content="股票,炒股,股票资讯,行情,财经,证券,投资,金融,港股,美股,基金,债券,期货,外汇,科创板,保险,雪球财经,雪球,雪球股票,投资社区,雪球投资" name="keywords"/>
+  <meta content="雪球，聪明的投资者都在这里 - 3000万投资者都在用的投资社区，沪深港美全球市场实时行情，股票基金债券免费资讯，与投资高手实战交流。" name="description"/>
+  <meta content="always" name="referrer"/>
+  <link href="https://assets.imedao.com/images/favicon.png" rel="icon" type="image/png"/>
+  <!--标题-->
+  <title>
+   enl1 - 雪球组合 - 雪球
+  </title>
+  <!--默认样式-->
+  <!--IE8 支持 media query 需要跨域读取 css 内容，暂时不做支持。-->
+  <link href="https://assets.imedao.com/style/common/base-5eaa54.css" rel="stylesheet"/>
+  <!--默认加载编辑器相关 css-->
+  <link href="https://assets.imedao.com/style/widget/umeditor/editor-056c61.css" rel="stylesheet"/>
+  <link href="https://assets.imedao.com/style/cube/cube_detail-1669f7.css" rel="stylesheet"/>
+  <link href="https://assets.imedao.com/style/pages/sns/home-cb7cd7.css" rel="stylesheet"/>
+  <!--默认脚本-->
+  <script src="https://assets.imedao.com/js/xdomain-0.6.15-575cd5.js">
+  </script>
+  <script>
+   xdomain.slaves({
+  'https://xueqiu.com': '/proxy2.html',
+  'https://im0.xueqiu.com': '/proxy2.html',
+  'https://im1.xueqiu.com': '/proxy2.html',
+  'https://im2.xueqiu.com': '/proxy2.html',
+  'https://im3.xueqiu.com': '/proxy2.html',
+  'https://im4.xueqiu.com': '/proxy2.html',
+  'https://im5.xueqiu.com': '/proxy2.html',
+  'https://im6.xueqiu.com': '/proxy2.html',
+  'https://im7.xueqiu.com': '/proxy2.html',
+  'https://im8.xueqiu.com': '/proxy2.html',
+  'https://im9.xueqiu.com': '/proxy2.html'
+});
+  </script>
+  <script src="https://assets.imedao.com/js/common/lib-e9c317.js">
+  </script>
+  <script src="https://assets.imedao.com/js/config-3e9bbc.js">
+  </script>
+  <script>
+   //如果没有 JSON 对象，就加载
+if (!window.JSON || !window.JSON.stringify) {
+  document.writeln('<script src="https://assets.imedao.com/js/common/json-b459a8.js"><\/script>');
+}
+SNB.staticDomain.init('https://assets.imedao.com');
+SNB.currentUser = JSON.parse(decodeURIComponent('%7B%22isGuest%22%3Atrue%7D'));
+SNB.env = "production";
+  </script>
+  <script src="https://assets.imedao.com/js/SNB.helpers-e8731e.js">
+  </script>
+ </head>
+ <body class="">
+  <div id="head">
+   <div class="grid">
+    <div class="col col-12-2">
+     <div id="logo">
+      <a href="/" title="返回我的首页">
+       <img alt="雪球" class="logo-type" src="https://assets.imedao.com/images/logos/logo.2015.png"/>
+       <img alt="雪球" src="https://assets.imedao.com/images/logos/logotype.2015.png" style="width: 48px;"/>
+      </a>
+     </div>
+    </div>
+    <div class="col col-12-7">
+     <div class="nav-logined" id="nav-logined" style="display:none">
+      <ul class="nav">
+       <li class="my-home">
+        <a href="/" target="_self">
+         首页
+        </a>
+       </li>
+       <li class="dropdown hots">
+        <a class="dropdown-toggle" data-target="#" data-toggle="dropdown" href="/today/">
+         精华
+        </a>
+        <ul class="dropdown-menu">
+         <li>
+          <a href="/today/" target="_self">
+           今日话题
+          </a>
+         </li>
+         <!--li-->
+         <!--  a(href="/today/hots", target="_self") 热门讨论-->
+         <li>
+          <a href="/talks/all" target="_self">
+           雪球访谈
+          </a>
+         </li>
+         <li>
+          <a href="/people" target="_self">
+           找人
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="dropdown hqhave-caret invest">
+        <a class="dropdown-toggle" data-target="#" data-toggle="dropdown" href="/hq" target="_self">
+         行情
+        </a>
+        <ul class="dropdown-menu">
+         <li>
+          <a href="/hq" target="_self">
+           行情中心
+          </a>
+         </li>
+         <li>
+          <a href="/p/discover" target="_self">
+           买什么
+          </a>
+         </li>
+         <li>
+          <a href="/hq/screener" target="_self">
+           筛选器
+          </a>
+         </li>
+         <li>
+          <a href="/f/home" target="_blank">
+           私募中心
+          </a>
+         </li>
+         <li>
+          <a href="/hq#xgss" target="_self">
+           新股上市
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li>
+        <a class="new" href="/ask/square" target="_self">
+         问答
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="search">
+      <form action="/k" method="get">
+       <input autocomplete="off" class="typeahead" id="quick-search" name="q" placeholder="搜索 股票/讨论/用户/组合/群组" type="text"/>
+       <button type="submit">
+        search
+       </button>
+      </form>
+     </div>
+    </div>
+    <div class="col col-12-3" id="nav-account-layout">
+     <false>
+     </false>
+     <ul class="nav pull-right account" id="nav-account" style="display:none">
+      <li class="dropdown">
+       <a class="dropdown-toggle" data-target="#" data-toggle="dropdown" href="#" id="nav-account-name">
+        <script type="text/html">
+         {screen_name}
+        </script>
+       </a>
+       <ul class="dropdown-menu">
+        <li id="nav-account-profile">
+         <script type="text/html">
+          <a href="{profile}/profile" target="_self"><img src="{photo_domain}{profile_image_url}">{screen_name}</a>
+         </script>
+        </li>
+        <li>
+         <a href="/setting/user" target="_self">
+          个人设置
+         </a>
+        </li>
+        <li>
+         <a href="/setting/st_privacy" target="_self">
+          股票设置
+         </a>
+        </li>
+        <li>
+         <a class="exit" href="/user/logout" target="_self">
+          退出
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li class="dropdown">
+       <a class="dropdown-toggle" data-target="#" data-toggle="dropdown" href="#" id="btn-notice" style="display: none;">
+        消息
+        <span class="notice-count" style="display: none;">
+         0
+        </span>
+       </a>
+       <ul class="notices-list dropdown-menu">
+        <li class="comments" style="display: none;">
+         <a class="pjax" href="/comments" target="_self">
+          <span class="count">
+          </span>
+          收到的评论
+         </a>
+        </li>
+        <!--li.dm(style="display: none;")<a href="/messages" target="_self"><span class="count"></span>新私信</a>-->
+        <li class="like_receive" style="display: none;">
+         <a class="pjax" href="/likes">
+          <span class="count">
+          </span>
+          赞我的
+         </a>
+        </li>
+        <li class="mentions" style="display: none;">
+         <a class="pjax" href="/atme" target="_self">
+          <span class="count">
+          </span>
+          @我的
+         </a>
+        </li>
+        <li class="paid_mentions" style="display: none;">
+         <a class="pjax" href="/atme-paid" target="_self">
+          <span class="count">
+          </span>
+          原文提问我的
+         </a>
+        </li>
+        <li class="pm_comments" style="display: none;">
+         <a class="pjax" href="/atme-paid?mention=comment" target="_self">
+          <span class="count">
+          </span>
+          评论提问我的
+         </a>
+        </li>
+        <!--li.weibo_friends(style="display: none;")<a href="/friends?q=weibo" target="_self" class="pjax"><span class="count"></span>微博好友</a>-->
+        <li class="followers" style="display: none;">
+         <a href="/follows" target="_self">
+          <span class="count">
+          </span>
+          新增粉丝
+         </a>
+        </li>
+        <li class="notices" style="display: none;">
+         <a class="pjax" href="#" target="_self">
+          <span class="count">
+          </span>
+          新公告
+         </a>
+        </li>
+        <li class="events" style="display: none;">
+         <a class="pjax" href="/calendar" target="_self">
+          <span class="count">
+          </span>
+          事件提醒
+         </a>
+        </li>
+        <li class="setting">
+         <a href="/setting/notice" target="_self">
+          提醒设置
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li class="dropdown">
+       <!--a#btn-open-im(href="#")-->
+       <!--  | 聊天-->
+       <!--  sup(style="display: none;") 0-->
+      </li>
+     </ul>
+     <ul class="nav pull-right account" id="nav-login" style="display:block">
+      <li>
+       <a href="/snowman/account/login" target="_self">
+        注册
+       </a>
+      </li>
+      <li>
+       <a href="/snowman/account/login" target="_self">
+        登录
+       </a>
+      </li>
+     </ul>
+     <script>
+      seajs.use('widget/util/user');
+     </script>
+    </div>
+    <script>
+     jQuery(function(){seajs.use(['widget/util/typeahead', 'widget/bootstrap/dropdown']);});
+    </script>
+   </div>
+  </div>
+  <div id="container">
+   <div class="grid">
+    <div class="col col-12-12">
+     <style>
+      .sp-color{
+  background: #edbf05!important;
+  background: -webkit-linear-gradient(30deg, #edbf05 0%,#f6ad00 100%)!important;
+  background:    -moz-linear-gradient(30deg, #edbf05 0%,#f6ad00 100%)!important;
+  background:      -o-linear-gradient(30deg,  0%,#f6ad00 100%)!important;
+  background:         linear-gradient(30deg, #edbf05 0%,#f6ad00 100%)!important;
+}
+     </style>
+     <div class="cube-content">
+      <div class="cube-title">
+       <span class="name">
+        enl1
+       </span>
+       <span class="symbol">
+        ZH2421774
+       </span>
+       <a class="cube-action edit-group fn-hide" href="#">
+        修改分组
+       </a>
+       <a class="cube-action cube-share" data-defaulttext="$enl1(ZH2421774)$" data-target="$enl1(ZH2421774)$" data-toggle="at" href="#">
+        分享
+       </a>
+       <a class="cube-analyze" href="/service/p/cube-analyze?symbol=ZH2421774" target="_blank">
+        <i>
+        </i>
+        <span>
+         业绩分析
+        </span>
+       </a>
+       <div class="cube-title-right">
+        <a class="cube-follow cube-follow-false" data-following="false">
+         <span class="add">
+          <i>
+           +
+          </i>
+          加关注
+         </span>
+         <span class="del">
+          <i>
+           √
+          </i>
+          已关注
+         </span>
+        </a>
+        <div class="cube-people-data">
+         <span>
+          <span class="num">
+           3
+人关注
+          </span>
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="cube-block fn-clear sp-color" id="cube-info">
+       <div class="cube-blockmain">
+        <div class="cube-color">
+         <div class="cube-profit-year fn-clear">
+          <span class="per">
+           -25.85
+          </span>
+          <span class="per-symbol">
+           %
+          </span>
+          <span class="period">
+           <span>
+            总收益
+           </span>
+          </span>
+         </div>
+         <div class="cube-profits fn-clear">
+          <div class="cube-profit-day cube-profit" style="border:0;padding-left:0">
+           <div class="period">
+            日
+           </div>
+           <div class="per">
+            2.24%
+           </div>
+          </div>
+          <div class="cube-profit-day cube-profit">
+           <div class="period">
+            月
+           </div>
+           <div class="per">
+            -8.58%
+           </div>
+          </div>
+          <div class="cube-profit-day cube-profit">
+           <div class="period">
+            净值
+           </div>
+           <div class="per">
+            0.7415
+           </div>
+          </div>
+          <div class="cube-ranks fn-clear">
+           <a class="cube-rank rank" href="javascript:void(0)" id="cube_rank">
+            <img alt="提交中" class="loading_image" src="https://assets.imedao.com/images/loading_32x32_white.gif"/>
+            <div class="content" style="display:none;">
+             <div class="rank-title">
+              <span id="rankText">
+               月收益排名（沪深)
+              </span>
+              <div class="em">
+              </div>
+             </div>
+             <p class="rank-value" id="rankValue">
+              跑赢
+              <span class="per">
+               -25.85%
+组合
+              </span>
+             </p>
+            </div>
+           </a>
+          </div>
+         </div>
+         <div class="cube-tags">
+          <div class="tag">
+           沪深
+          </div>
+          <div class="cube-tip" id="what-is-cube">
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="cube-blockright">
+        <div class="cube-creator-info fn-clear">
+         <a class="creator fn-clear" href="/5000292639" target="_blank">
+          <img src="//xavatar.imedao.com/community/default/avatar.png!50x50.png"/>
+          <div class="infos">
+           <div class="name" style="padding-top:15px">
+            klou5icky
+           </div>
+          </div>
+         </a>
+         <div class="desc">
+          <span class="text">
+           暂无投资建议哦
+          </span>
+          <div class="after">
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="cube-left">
+       <div class="cube-profit cube-block fn-clear" id="cube-rate-chart">
+        <div class="cube-blockmain">
+         <div class="block-title">
+          <span>
+           收益率走势
+          </span>
+          <span class="date">
+           （ 创建于 2021.01.25 ）
+          </span>
+         </div>
+         <div class="switch">
+          <a class="pressed" data-chart="NAV-line-m" href="javascript:void(0)">
+           <span>
+            近3个月
+           </span>
+          </a>
+          <a data-chart="NAV-line" href="javascript:void(0)">
+           <span>
+            最近1年
+           </span>
+          </a>
+          <a data-chart="NAV-line-all" href="javascript:void(0)">
+           <span>
+            全部
+           </span>
+          </a>
+         </div>
+         <div class="chart" id="NAV-line-m">
+         </div>
+         <div class="chart" id="NAV-line">
+         </div>
+         <div class="chart" id="NAV-line-all">
+         </div>
+         <div class="loading">
+          <img src="//assets.imedao.com/images/ajax_loader_32x32.gif"/>
+         </div>
+         <div class="warn">
+          提示：组合数据与实际操作结果存在差异
+         </div>
+        </div>
+        <!--.cube-blockright-->
+        <!--    .block-title 历史净值-->
+        <!--    ul.nav-list-->
+       </div>
+       <div class="cube-profit cube-block fn-clear" id="cube-action">
+        <div class="cube-blockmain">
+         <div class="block-title">
+          <span>
+           最新调仓
+          </span>
+         </div>
+         <div class="loading">
+          <img src="https://assets.imedao.com/images/ajax_loader_32x32.gif"/>
+         </div>
+        </div>
+       </div>
+       <div class="cube-profit cube-block fn-clear" id="cube-timeline">
+        <div class="cube-blockmain">
+         <link href="https://assets.imedao.com/style/pages/home/home-editor-b7e926.css" rel="stylesheet"/>
+         <div class="editor-comment" id="home-editor">
+          <div class="status-form">
+           <div class="editor-textarea">
+            <textarea disabled="disabled"></textarea>
+           </div>
+           <div class="editor-ctrl">
+            <div class="extra">
+             <div class="editor-emotion" title="插入表情">
+              <span class="icon-icon_16_-25">
+              </span>
+              表情
+             </div>
+             <div class="editor-stock" title="插入股票代码">
+              <span class="icon-icon_16_-26">
+              </span>
+              股票
+             </div>
+             <div class="editor-image" title="上传图片">
+              <span class="icon-icon_16_-27">
+              </span>
+              图片
+             </div>
+             <div class="editor-pdf" title="上传研报 pdf 文件">
+              <span class="icon-icon_16_-28">
+              </span>
+              PDF
+             </div>
+             <a data-login-href="" href="/write" target="_blank">
+              <span class="icon-icon_16_-29">
+              </span>
+              长文
+             </a>
+             <div class="upload-state">
+              <i class="loading">
+              </i>
+              上传中
+             </div>
+            </div>
+            <div class="submit">
+             <button class="btn btn-medium pay-submit hidden" data-type="1" type="submit">
+              支付并发布
+             </button>
+             <button class="btn btn-medium status-submit" type="submit">
+              发布
+             </button>
+            </div>
+           </div>
+          </div>
+         </div>
+         <script id="payConfirmTpl" type="x-template">
+          <div id="payConfirm" class="reward-modal dimmer center middle hidden">
+  <div class="reward-container">
+    <div class="reward-modal-hd">确定提问金额
+      <div class="close"></div>
+    </div>
+    <div class="reward-modal-bd">
+      <div class="pay-confirm-main">
+        <div class="pay-user-info">
+          <% var avatar = data.photo_domain + data.profile_image_url.split(',')[0]; %>
+          <img src="<%= avatar %>!100x100.png" alt="" class="pay-user-avatar"/>
+          <div class="pay-user-name"><%= data.screen_name %>
+          <% if (data.verified) { %>
+          <img src="//assets.imedao.com/images/vipicon_<%= data.verified_type || 1 %>.png" alt="<%= data.verified_description %>"/>
+          <% } %>
+          </div>
+          <% if (data.verified_description) { %>
+          <div class="pay-user-title"><%= data.verified_description %></div>
+          <% } %>
+          <% if (data.description) { %>
+          <div class="pay-user-desc"><%= data.description %></div>
+          <% } %>
+        </div>
+        <div class="pay-confirm-bd">
+          <div class="pay-confirm-title">向Ta提问并支付</div>
+          <div class="pay-confirm-custom">
+            <input id="payAmount" type="text" min="<%= data.min %>" max="200" value="<%= data.min %>"/><span>元</span>
+          </div>
+          <p>你可以选择为本次提问支付更高的费用，上限200元</p>
+          <div class="pay-confirm-btn">确定</div>
+          <p class="pay-confirm-warn">
+            提问被对方回复后，所回复内容的打赏将与你5:5分成;
+            <br>若对方超过48小时未回答，费用将自动退回。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+         </script>
+         <script id="payWindowTpl" type="text/x-template">
+          <div id="payWindow" class="reward-modal dimmer center middle hidden">
+  <div class="reward-container">
+    <div class="reward-modal-hd">支付
+      <div class="close"></div>
+    </div>
+    <div class="reward-modal-bd">
+      <div class="payment-mod">
+        <div class="reward-amount-mod">
+          <div class="reward-heading">
+            支付￥<%= amount %>
+          </div>
+        </div>
+        <% if (wallet > 0) { %>
+          <div class="reward-payment-mod reward-payment-layout-3">
+            <div class="reward-payment wechat checked">
+              <span>微信支付</span>
+              <div class="check-radio"></div>
+            </div>
+            <div class="reward-payment alipay">
+              <span>支付宝支付</span>
+              <div class="check-radio"></div>
+            </div>
+            <div class="reward-payment wallet">
+              <span>余额支付
+                <i class="wallet-amount">可用余额<%= wallet %>元</i>
+              </span>
+              <div class="check-radio"></div>
+            </div>
+          </div>
+        <% } else { %>
+          <div class="reward-payment-mod reward-payment-layout-2">
+            <div class="reward-payment wechat">
+              <span>微信支付</span>
+              <div class="check-radio"></div>
+            </div>
+            <div class="reward-payment alipay">
+              <span>支付宝支付</span>
+              <div class="check-radio"></div>
+            </div>
+          </div>
+        <% } %>
+        <div class="reward-modal-btn pay-btn">立即支付</div>
+        <p class="reward-modal-terms">支付即代表同意<a href="/law/Q&A" target="_blank">雪球问答协议</a><br/>不符合协议规定的问题将会被删除</p>
+      </div>
+    </div>
+  </div>
+</div>
+         </script>
+         <script id="payAtSuccessTpl" type="text/x-template">
+          <div id="payAtSuccessModal" class="reward-modal dimmer center middle hidden">
+  <div class="reward-container">
+    <div class="reward-modal-hd">支付结果
+      <div class="close"></div>
+    </div>
+    <div class="reward-modal-bd">
+      <div class="pay-success">
+        <div class="reward-result-mod success">
+          <div class="reward-result-heading">支付成功</div>
+          <p>问题被回答后，你将收到推送提醒，若回答者在48小时内未回答，相关费用将退还至你的钱包</p>
+        </div>
+        <div class="reward-modal-btn pay-at-done blue">完成</div>
+      </div>
+    </div>
+  </div>
+</div>
+         </script>
+         <style>
+          .watermark .editor-status{
+  background: #000000;
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  //- background: #f6f6f6;
+  z-index: 500;
+  padding: 15px;
+}
+.waterMarkshow .box{
+  position: fixed;
+  width:374px;
+  height: 258px;
+  margin:auto; 
+  top:0; 
+  left:0; 
+  right:0;
+  bottom: 0;
+  text-align: center;
+  border-radius: 4px;
+  background: #fff;
+  z-index: 501;
+}
+.waterMarkshow .box .img{
+  width: 76px;
+  height: 73px;
+  margin-top: 41px;
+  margin-bottom: 8px;
+}
+.waterMarkshow .bottomDiv{
+  display: flex;
+  margin: 28px 50px;
+}
+.waterMarkshow button{
+  flex: 1;
+  width: 126px;
+  height: 36px;
+  margin: 4px;
+  cursor: pointer;
+}
+.waterMarkshow .box h1{
+  font-family: PingFangSC-Medium;
+  font-size: 16px;
+  color: #333333;
+  letter-spacing: 0;
+  line-height: 20px;
+  margin:0;
+}
+.waterMarkshow .box h2{
+  margin-top: 4px;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #BBBBBB;
+  letter-spacing: 0;
+}
+.waterMarkshow .confirm{
+  background: #0177DD;
+  border-radius: 2px;
+  font-family: PingFangSC-Medium;
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  border-style: none;
+}
+.waterMarkshow .cancle{
+  background: #EAF5FF;
+  border-radius: 2px;
+  font-family: PingFangSC-Medium;
+  font-size: 14px;
+  color: #4990E2;
+  letter-spacing: 0;
+  border-style: none;
+}
+.waterMarkshow{
+  display:none
+}
+.dontshow{
+  display:none
+}
+         </style>
+         <div class="waterMarkshow">
+          <div class="watermark">
+           <div class="editor-status">
+           </div>
+          </div>
+          <div class="box">
+           <img class="img" src="//assets.imedao.com/images/pages/singlePage/watermark@2x.png"/>
+           <h1>
+            给上传的图片加昵称水印？
+           </h1>
+           <h2>
+            也可以在个人设置里开启
+           </h2>
+           <div class="bottomDiv">
+            <button class="cancle">
+             以后再说
+            </button>
+            <button class="confirm">
+             加昵称水印
+            </button>
+           </div>
+          </div>
+         </div>
+         <div class="dontshow">
+          <img crossorigin="Anonymous" id="watermarkImg" src="//assets.imedao.com/images/logos/logo.2015.png"/>
+         </div>
+         <script>
+          var watermark = '';
+function waterMarkSet(fun,file){
+    $(".waterMarkshow").css("display","block");
+    var cancle = $('.bottomDiv > .cancle');
+    var confirm = $('.bottomDiv > .confirm');
+    var waterMarkshow = $(".waterMarkshow");
+    cancle.on('click',function(){
+      waterMarkshow.css("display","none");
+      cancle.unbind();
+      confirm.unbind();
+      uploadWatermarkSet(2);
+      setTimeout(function(){fun()},200);
+    });
+    confirm.on('click',function(){
+      waterMarkshow.css("display","none");
+      cancle.unbind();
+      confirm.unbind();
+      uploadWatermarkSet(1);
+      setTimeout(function(){fun(file)},200);
+    });
+};
+function uploadWatermarkSet(value){
+    var data = {
+      type:'image_watermark',
+      value:value,
+    };
+    $.ajax({
+        type: 'POST',
+        url: '/user/setting/set_select.json',
+        data: data,
+        complete: function() {
+          watermark = value;
+        }
+    });
+};
+         </script>
+         <script>
+          jQuery('#home-editor').find('form').on('submit', function () {
+  return false;
+});
+seajs.use("widget/TSNB.home-editor.js", function (homeEditor) {
+  homeEditor.init();
+});
+         </script>
+        </div>
+        <div class="cube-blockmain cube-timeline">
+         <div class="mod">
+          <div class="mod-hd">
+           <div id="status-nav">
+            <div class="status-nav">
+             <span>
+              <a class="active" data-isowner="true" href="javascript:void(0)">
+               主理人说
+              </a>
+             </span>
+             <span>
+              <a href="javascript:void(0)">
+               所有点评
+              </a>
+             </span>
+            </div>
+           </div>
+          </div>
+          <div class="mod-bd timeline">
+           <div id="status-list">
+           </div>
+           <div id="status-list-more">
+            <a href="#">
+             点击加载更多
+            </a>
+           </div>
+          </div>
+         </div>
+         <!--init timeline-->
+         <script>
+          var ownerId = '5000292639';
+var symbol = 'ZH2421774';
+var cubeName = 'enl1';
+
+seajs.use('cube/cube-timeline.js', function (timeline) {
+  timeline.init(symbol, ownerId, cubeName);
+});
+         </script>
+        </div>
+       </div>
+      </div>
+      <div class="cube-right">
+       <div class="cube-block fn-clear" id="cube-rank-chart">
+        <div class="block-title">
+         <span>
+          业绩评级
+         </span>
+         <span class="date">
+         </span>
+         <div class="cube-tip" id="what-is-cube-rank">
+         </div>
+        </div>
+        <div id="cube-rank-canvas">
+         <div class="cueb-rank-stars">
+         </div>
+         <div class="loading">
+          <img src="https://assets.imedao.com/images/ajax_loader_32x32.gif"/>
+         </div>
+        </div>
+       </div>
+       <div class="cube-block fn-clear" id="cube-weight">
+        <div class="cube-blockmain" id="cube-config-chart">
+         <div class="block-title">
+          <span>
+           股票配置
+          </span>
+         </div>
+         <div id="weight-circle">
+          <div class="loading">
+           <img src="https://assets.imedao.com/images/ajax_loader_32x32.gif"/>
+          </div>
+          <div class="cube-performance">
+           <ul>
+            <li>
+             最近三个月调仓
+             <span class="count">
+              2
+             </span>
+             次，
+             <span class="count">
+              0
+             </span>
+             次赚了钱
+            </li>
+            <li>
+             三个月内买入的最赚钱股票
+             <span>
+              安井食品
+             </span>
+            </li>
+           </ul>
+          </div>
+          <div class="after">
+          </div>
+         </div>
+        </div>
+        <div class="cube-blockright cube-position">
+         <div class="block-title">
+          详细仓位
+          <a class="history" data-open="false" href="/P/history">
+           调仓历史记录
+          </a>
+         </div>
+         <div class="weight-list">
+          <div class="segment fn-clear" data-segment-name="电气设备">
+           <span class="segment-color" style="background:#0055aa">
+           </span>
+           <span class="segment-name">
+            电气设备
+           </span>
+           <span class="segment-weight weight">
+            14.15%
+           </span>
+          </div>
+          <a class="stock fn-clear no-tooltip" data-sid="1000817" data-symbol="SH601012" href="/S/SH601012" target="_blank">
+           <span class="stock-color" style="background:#ff9900">
+           </span>
+           <span class="stock-name">
+            <div class="name">
+             隆基股份
+            </div>
+            <div class="price">
+             SH601012
+            </div>
+           </span>
+           <span class="stock-weight weight">
+            4.73%
+           </span>
+          </a>
+          <a class="stock fn-clear no-tooltip" data-sid="1030646" data-symbol="SZ300750" href="/S/SZ300750" target="_blank">
+           <span class="stock-color" style="background:#ff9900">
+           </span>
+           <span class="stock-name">
+            <div class="name">
+             宁德时代
+            </div>
+            <div class="price">
+             SZ300750
+            </div>
+           </span>
+           <span class="stock-weight weight">
+            5.31%
+           </span>
+          </a>
+          <a class="stock fn-clear no-tooltip" data-sid="1000367" data-symbol="SH600438" href="/S/SH600438" target="_blank">
+           <span class="stock-color" style="background:#ff9900">
+           </span>
+           <span class="stock-name">
+            <div class="name">
+             通威股份
+            </div>
+            <div class="price">
+             SH600438
+            </div>
+           </span>
+           <span class="stock-weight weight">
+            4.11%
+           </span>
+          </a>
+          <div class="segment fn-clear" data-segment-name="汽车">
+           <span class="segment-color" style="background:#537299">
+           </span>
+           <span class="segment-name">
+            汽车
+           </span>
+           <span class="segment-weight weight">
+            9.18%
+           </span>
+          </div>
+          <a class="stock fn-clear no-tooltip" data-sid="1001160" data-symbol="SZ000338" href="/S/SZ000338" target="_blank">
+           <span class="stock-color" style="background:#ff9900">
+           </span>
+           <span class="stock-name">
+            <div class="name">
+             潍柴动力
+            </div>
+            <div class="price">
+             SZ000338
+            </div>
+           </span>
+           <span class="stock-weight weight">
+            4.86%
+           </span>
+          </a>
+          <a class="stock fn-clear no-tooltip" data-sid="1002149" data-symbol="SZ002594" href="/S/SZ002594" target="_blank">
+           <span class="stock-color" style="background:#ff9900">
+           </span>
+           <span class="stock-name">
+            <div class="name">
+             比亚迪
+            </div>
+            <div class="price">
+             SZ002594
+            </div>
+           </span>
+           <span class="stock-weight weight">
+            4.32%
+           </span>
+          </a>
+          <div class="segment fn-clear" data-segment-name="国防军工">
+           <span class="segment-color" style="background:#7b9948">
+           </span>
+           <span class="segment-name">
+            国防军工
+           </span>
+           <span class="segment-weight weight">
+            6.13%
+           </span>
+          </div>
+          <a class="stock fn-clear no-tooltip" data-sid="1000572" data-symbol="SH600685" href="/S/SH600685" target="_blank">
+           <span class="stock-color" style="background:#ff9900">
+           </span>
+           <span class="stock-name">
+            <div class="name">
+             中船防务
+            </div>
+            <div class="price">
+             SH600685
+            </div>
+           </span>
+           <span class="stock-weight weight">
+            6.13%
+           </span>
+          </a>
+          <div class="segment fn-clear" data-segment-name="有色金属">
+           <span class="segment-color" style="background:#6b8a6b">
+           </span>
+           <span class="segment-name">
+            有色金属
+           </span>
+           <span class="segment-weight weight">
+            4.39%
+           </span>
+          </div>
+          <a class="stock fn-clear no-tooltip" data-sid="1000920" data-symbol="SH601899" href="/S/SH601899" target="_blank">
+           <span class="stock-color" style="background:#ff9900">
+           </span>
+           <span class="stock-name">
+            <div class="name">
+             紫金矿业
+            </div>
+            <div class="price">
+             SH601899
+            </div>
+           </span>
+           <span class="stock-weight weight">
+            4.39%
+           </span>
+          </a>
+          <div class="segment fn-clear" data-segment-name="机械设备">
+           <span class="segment-color" style="background:#927f60">
+           </span>
+           <span class="segment-name">
+            机械设备
+           </span>
+           <span class="segment-weight weight">
+            10.12%
+           </span>
+          </div>
+          <a class="stock fn-clear no-tooltip" data-sid="1000024" data-symbol="SH600031" href="/S/SH600031" target="_blank">
+           <span class="stock-color" style="background:#ff9900">
+           </span>
+           <span class="stock-name">
+            <div class="name">
+             三一重工
+            </div>
+            <div class="price">
+             SH600031
+            </div>
+           </span>
+           <span class="stock-weight weight">
+            4.91%
+           </span>
+          </a>
+          <a class="stock fn-clear no-tooltip" data-sid="1032246" data-symbol="SH603185" href="/S/SH603185" target="_blank">
+           <span class="stock-color" style="background:#ff9900">
+           </span>
+           <span class="stock-name">
+            <div class="name">
+             上机数控
+            </div>
+            <div class="price">
+             SH603185
+            </div>
+           </span>
+           <span class="stock-weight weight">
+            5.21%
+           </span>
+          </a>
+          <div class="segment fn-clear" data-segment-name="交通运输">
+           <span class="segment-color" style="background:#4db6e0">
+           </span>
+           <span class="segment-name">
+            交通运输
+           </span>
+           <span class="segment-weight weight">
+            4.50%
+           </span>
+          </div>
+          <a class="stock fn-clear no-tooltip" data-sid="1001908" data-symbol="SZ002352" href="/S/SZ002352" target="_blank">
+           <span class="stock-color" style="background:#ff9900">
+           </span>
+           <span class="stock-name">
+            <div class="name">
+             顺丰控股
+            </div>
+            <div class="price">
+             SZ002352
+            </div>
+           </span>
+           <span class="stock-weight weight">
+            4.50%
+           </span>
+          </a>
+          <div class="segment fn-clear" data-segment-name="化工">
+           <span class="segment-color" style="background:#5ea180">
+           </span>
+           <span class="segment-name">
+            化工
+           </span>
+           <span class="segment-weight weight">
+            9.17%
+           </span>
+          </div>
+          <a class="stock fn-clear no-tooltip" data-sid="1000296" data-symbol="SH600346" href="/S/SH600346" target="_blank">
+           <span class="stock-color" style="background:#ff9900">
+           </span>
+           <span class="stock-name">
+            <div class="name">
+             恒力石化
+            </div>
+            <div class="price">
+             SH600346
+            </div>
+           </span>
+           <span class="stock-weight weight">
+            4.18%
+           </span>
+          </a>
+          <a class="stock fn-clear no-tooltip" data-sid="1000265" data-symbol="SH600309" href="/S/SH600309" target="_blank">
+           <span class="stock-color" style="background:#ff9900">
+           </span>
+           <span class="stock-name">
+            <div class="name">
+             万华化学
+            </div>
+            <div class="price">
+             SH600309
+            </div>
+           </span>
+           <span class="stock-weight weight">
+            4.99%
+           </span>
+          </a>
+          <div class="segment fn-clear" data-segment-name="食品饮料">
+           <span class="segment-color" style="background:#ecad32">
+           </span>
+           <span class="segment-name">
+            食品饮料
+           </span>
+           <span class="segment-weight weight">
+            5.33%
+           </span>
+          </div>
+          <a class="stock fn-clear no-tooltip" data-sid="1028108" data-symbol="SH603345" href="/S/SH603345" target="_blank">
+           <span class="stock-color" style="background:#ff9900">
+           </span>
+           <span class="stock-name">
+            <div class="name">
+             安井食品
+            </div>
+            <div class="price">
+             SH603345
+            </div>
+           </span>
+           <span class="stock-weight weight">
+            5.33%
+           </span>
+          </a>
+          <div class="segment fn-clear" data-segment-name="农林牧渔">
+           <span class="segment-color" style="background:#dbbd45">
+           </span>
+           <span class="segment-name">
+            农林牧渔
+           </span>
+           <span class="segment-weight weight">
+            5.15%
+           </span>
+          </div>
+          <a class="stock fn-clear no-tooltip" data-sid="1002268" data-symbol="SZ002714" href="/S/SZ002714" target="_blank">
+           <span class="stock-color" style="background:#ff9900">
+           </span>
+           <span class="stock-name">
+            <div class="name">
+             牧原股份
+            </div>
+            <div class="price">
+             SZ002714
+            </div>
+           </span>
+           <span class="stock-weight weight">
+            5.15%
+           </span>
+          </a>
+          <div class="segment fn-clear" data-segment-name="医药生物">
+           <span class="segment-color" style="background:#2bb98f">
+           </span>
+           <span class="segment-name">
+            医药生物
+           </span>
+           <span class="segment-weight weight">
+            20.01%
+           </span>
+          </div>
+          <a class="stock fn-clear no-tooltip" data-sid="1038420" data-symbol="SZ300896" href="/S/SZ300896" target="_blank">
+           <span class="stock-color" style="background:#ff9900">
+           </span>
+           <span class="stock-name">
+            <div class="name">
+             爱美客
+            </div>
+            <div class="price">
+             SZ300896
+            </div>
+           </span>
+           <span class="stock-weight weight">
+            4.68%
+           </span>
+          </a>
+          <a class="stock fn-clear no-tooltip" data-sid="1000366" data-symbol="SH600436" href="/S/SH600436" target="_blank">
+           <span class="stock-color" style="background:#ff9900">
+           </span>
+           <span class="stock-name">
+            <div class="name">
+             片仔癀
+            </div>
+            <div class="price">
+             SH600436
+            </div>
+           </span>
+           <span class="stock-weight weight">
+            5.13%
+           </span>
+          </a>
+          <a class="stock fn-clear no-tooltip" data-sid="1030461" data-symbol="SH603259" href="/S/SH603259" target="_blank">
+           <span class="stock-color" style="background:#ff9900">
+           </span>
+           <span class="stock-name">
+            <div class="name">
+             药明康德
+            </div>
+            <div class="price">
+             SH603259
+            </div>
+           </span>
+           <span class="stock-weight weight">
+            5.49%
+           </span>
+          </a>
+          <a class="stock fn-clear no-tooltip" data-sid="1000646" data-symbol="SH600763" href="/S/SH600763" target="_blank">
+           <span class="stock-color" style="background:#ff9900">
+           </span>
+           <span class="stock-name">
+            <div class="name">
+             通策医疗
+            </div>
+            <div class="price">
+             SH600763
+            </div>
+           </span>
+           <span class="stock-weight weight">
+            4.71%
+           </span>
+          </a>
+          <div class="segment fn-clear" data-segment-name="轻工制造">
+           <span class="segment-color" style="background:#e0b256">
+           </span>
+           <span class="segment-name">
+            轻工制造
+           </span>
+           <span class="segment-weight weight">
+            6.19%
+           </span>
+          </div>
+          <a class="stock fn-clear no-tooltip" data-sid="1002127" data-symbol="SZ002572" href="/S/SZ002572" target="_blank">
+           <span class="stock-color" style="background:#ff9900">
+           </span>
+           <span class="stock-name">
+            <div class="name">
+             索菲亚
+            </div>
+            <div class="price">
+             SZ002572
+            </div>
+           </span>
+           <span class="stock-weight weight">
+            6.19%
+           </span>
+          </a>
+          <div class="segment fn-clear" data-segment-name="休闲服务">
+           <span class="segment-color" style="background:#e87f30">
+           </span>
+           <span class="segment-name">
+            休闲服务
+           </span>
+           <span class="segment-weight weight">
+            5.68%
+           </span>
+          </div>
+          <a class="stock fn-clear no-tooltip" data-sid="1000917" data-symbol="SH601888" href="/S/SH601888" target="_blank">
+           <span class="stock-color" style="background:#ff9900">
+           </span>
+           <span class="stock-name">
+            <div class="name">
+             中国中免
+            </div>
+            <div class="price">
+             SH601888
+            </div>
+           </span>
+           <span class="stock-weight weight">
+            5.68%
+           </span>
+          </a>
+          <div class="segment fn-clear" data-segment-name="现金">
+           <span class="segment-color" style="background:#4c0">
+           </span>
+           <span class="segment-name">
+            现金
+           </span>
+           <span class="segment-weight weight">
+            0.00%
+           </span>
+          </div>
+         </div>
+         <div class="history-list">
+          <ul>
+           <li class="loading">
+            <img src="//assets.imedao.com/images/ajax-loader.gif"/>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <a href="#" id="to-top" title="回到顶部">
+     </a>
+     <div class="modal" id="modal-cube-closed">
+      <div class="modal-wrap">
+       <div class="modal-title">
+        <h3>
+         关停组合
+        </h3>
+       </div>
+       <span aria-hidden="true" class="close" data-dismiss="modal">
+        X
+       </span>
+       <div class="modal-content">
+        <dl>
+         <dt>
+          关停组合后，组合将:
+         </dt>
+         <dd>
+          1.停止净值和收益率的计算
+         </dd>
+         <dd>
+          2.无法进行调仓操作
+         </dd>
+         <dd>
+          3.无法重新开启
+         </dd>
+        </dl>
+        <div class="submit">
+         <button class="btn btn-medium" type="submit">
+          确定
+         </button>
+         <a aria-hidden="true" class="btn btn-gray btn-medium cancle" data-dismiss="modal">
+          取消
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+     <script id="payAmountTemplate" type="x-template">
+      <div id="payAmountModal" class="reward-modal dimmer center middle hidden">
+  <div class="reward-container">
+    <div class="reward-modal-hd">现金打赏
+      <div class="close"></div>
+    </div>
+    <div class="reward-modal-bd">
+      <div class="payment-mod">
+        <div class="reward-amount-mod">
+          <div class="reward-amount-hd">欢迎打赏，请选择打赏金额</div>
+          <div class="reward-amount-bd">
+            <div class="reward-amount-grid">
+              <div data-amount="1" class="reward-amount-item active">1 元</div>
+              <div data-amount="6" class="reward-amount-item">6 元</div>
+              <div data-amount="10" class="reward-amount-item">10 元</div>
+              <div data-amount="66" class="reward-amount-item">66 元</div>
+              <div data-amount="100" class="reward-amount-item">100 元</div>
+              <div class="reward-amount-other">其他金额</div>
+              <div class="reward-amount-custom hidden empty">
+                <input type="text" placeholder="可填写1-200"/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <% if (wallet > 0) { %>
+          <div class="reward-payment-mod reward-payment-layout-3">
+            <div class="reward-payment wechat checked">
+              <span>微信支付</span>
+              <div class="check-radio"></div>
+            </div>
+            <div class="reward-payment alipay">
+              <span>支付宝支付</span>
+              <div class="check-radio"></div>
+            </div>
+            <div class="reward-payment wallet">
+              <span>余额支付
+                <i class="wallet-amount">可用余额<%= wallet %>元</i>
+              </span>
+              <div class="check-radio"></div>
+            </div>
+          </div>
+        <% } else { %>
+          <div class="reward-payment-mod reward-payment-layout-2">
+            <div class="reward-payment wechat">
+              <span>微信支付</span>
+              <div class="check-radio"></div>
+            </div>
+            <div class="reward-payment alipay">
+              <span>支付宝支付</span>
+              <div class="check-radio"></div>
+            </div>
+          </div>
+        <% } %>
+        <div class="reward-submit-mod">
+          <div class="reward-modal-btn pay-btn">立即支付</div>
+          <div class="reward-member-terms">
+            <div class="reward-ft-lf">支付即代表同意 <a href="/law/reward" target="_blank">雪球打赏协议</a></div>
+            <div class="reward-ft-rt reward-by-snowicon hidden"><a href="">使用雪球币打赏</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+     </script>
+     <script id="donateAmountTemplate" type="x-template">
+      <div id="donateAmountModal" class="donate-modal reward-modal dimmer center middle hidden">
+  <div class="reward-container">
+    <div class="reward-modal-hd">雪球币打赏
+      <div class="close"></div>
+    </div>
+    <div class="reward-modal-bd">
+      <div class="payment-mod">
+        <div class="reward-amount-mod">
+          <div class="reward-amount-hd">欢迎打赏，请选择打赏金额</div>
+          <div class="reward-amount-bd">
+            <div class="reward-amount-grid">
+              <div data-amount="1" class="reward-amount-item active">1 雪球币</div>
+              <div data-amount="6" class="reward-amount-item">6 雪球币</div>
+              <div data-amount="10" class="reward-amount-item">10 雪球币</div>
+              <div data-amount="66" class="reward-amount-item">66 雪球币</div>
+              <div data-amount="100" class="reward-amount-item">100 雪球币</div>
+              <div class="reward-amount-custom">
+                <input type="text" placeholder="其他金额"/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reward-submit-mod">
+          <div class="donate-detail">
+            应付：<span class="donate-amount"></span>雪球币；账号余额：<span class="donate-balance"></span>雪球币
+          </div>
+          <div class="donate-error hidden">
+          </div>
+          <div class="reward-modal-btn pay-btn">立即支付</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+     </script>
+     <script id="qrcodeTemplate" type="x-template">
+      <div id="qrcodeModal" class="reward-modal dimmer center middle hidden">
+  <div class="reward-container">
+    <div class="reward-modal-hd">微信扫码支付
+      <div class="close"></div>
+    </div>
+    <div class="reward-modal-bd">
+      <div class="qrcode-container">
+        <p class="qrcode-title">支付金额 <span class="wechat-amount">20.00</span> 元</p>
+        <img src=""/>
+        <p class="qrcode-desc">打开手机微信“扫一扫”</p>
+      </div>
+    </div>
+  </div>
+</div>
+     </script>
+     <script id="successTemplate" type="x-template">
+      <div id="successModal" class="reward-modal dimmer center middle hidden">
+  <div class="reward-container">
+    <div class="reward-modal-hd">现金打赏
+      <div class="close"></div>
+    </div>
+    <div class="reward-modal-bd">
+      <div class="pay-success">
+        <div class="reward-result-mod success">
+          <div class="reward-result-heading">感谢打赏</div>
+          <p>成功打赏该<%= type %>￥<%= amount %></p>
+        </div>
+        <div class="reward-modal-btn reward-share blue">分享到雪球动态</div>
+      </div>
+    </div>
+  </div>
+</div>
+     </script>
+     <script id="walletConfirmTpl" type="x-template">
+      <div id="walletConfirmModal" class="reward-modal dimmer center middle hidden">
+  <div class="reward-container">
+    <div class="reward-modal-hd">提示
+      <div class="close"></div>
+    </div>
+    <div class="reward-modal-bd">
+      <p>请确认是否用余额支付 <%= amount %> 元</p>
+      <div class="reward-modal-btn deny gray">取消</div>
+      <div class="reward-modal-btn define blue">确认</div>
+    </div>
+  </div>
+</div>
+     </script>
+    </div>
+   </div>
+  </div>
+  <script src="https://assets.imedao.com/js/raphael-ea1c64.js">
+  </script>
+  <script src="https://assets.imedao.com/js/analytics-f50a4e.js">
+  </script>
+  <script>
+   $('.cube-comments').css("height",475 - 0 - $('.cube-creator-info').outerHeight());
+$(window).resize(function(e){
+    $('.cube-comments').css("height",475   - 0- $('.cube-creator-info').outerHeight());
+})
+SNB.cubeType = 'ZH';
+SNB.cubeInfo = {"id":2455786,"name":"enl1","symbol":"ZH2421774","description":"","active_flag":true,"star":0,"market":"cn","owner_id":5000292639,"created_at":1611506055564,"updated_at":1615853026120,"last_rb_id":90516909,"daily_gain":2.24,"monthly_gain":-8.58,"total_gain":-25.85,"net_value":0.7415,"rank_percent":-25.85,"annualized_gain_rate":-25.85,"bb_rate":-33.28,"following":false,"follower_count":3,"view_rebalancing":{"id":90516909,"status":"success","cube_id":2455786,"prev_bebalancing_id":89350831,"category":"sys_rebalancing","exe_strategy":"market_all","created_at":1615853026120,"updated_at":1615853026120,"cash":0,"error_code":null,"cash_value":0.00001889,"error_message":"你上一笔调仓已成交。","error_status":null,"holdings":[{"stock_id":1000817,"weight":4.73,"segment_name":"电气设备","segment_id":11609183,"stock_name":"隆基股份","stock_symbol":"SH601012","segment_color":"#0055aa","proactive":false,"volume":0.00039499,"textname":"undefined(SH601012)","url":"/S/SH601012"},{"stock_id":1001160,"weight":4.86,"segment_name":"汽车","segment_id":11609181,"stock_name":"潍柴动力","stock_symbol":"SZ000338","segment_color":"#537299","proactive":false,"volume":0.00186316,"textname":"undefined(SZ000338)","url":"/S/SZ000338"},{"stock_id":1000572,"weight":6.13,"segment_name":"国防军工","segment_id":11609179,"stock_name":"中船防务","stock_symbol":"SH600685","segment_color":"#7b9948","proactive":false,"volume":0.0018036,"textname":"undefined(SH600685)","url":"/S/SH600685"},{"stock_id":1000920,"weight":4.39,"segment_name":"有色金属","segment_id":11803623,"stock_name":"紫金矿业","stock_symbol":"SH601899","segment_color":"#6b8a6b","proactive":false,"volume":0.00321266,"textname":"undefined(SH601899)","url":"/S/SH601899"},{"stock_id":1000024,"weight":4.91,"segment_name":"机械设备","segment_id":11609180,"stock_name":"三一重工","stock_symbol":"SH600031","segment_color":"#927f60","proactive":false,"volume":0.00103149,"textname":"undefined(SH600031)","url":"/S/SH600031"},{"stock_id":1002149,"weight":4.32,"segment_name":"汽车","segment_id":11609181,"stock_name":"比亚迪","stock_symbol":"SZ002594","segment_color":"#537299","proactive":false,"volume":0.00018227,"textname":"undefined(SZ002594)","url":"/S/SZ002594"},{"stock_id":1001908,"weight":4.5,"segment_name":"交通运输","segment_id":11803625,"stock_name":"顺丰控股","stock_symbol":"SZ002352","segment_color":"#4db6e0","proactive":false,"volume":0.00040193,"textname":"undefined(SZ002352)","url":"/S/SZ002352"},{"stock_id":1000296,"weight":4.18,"segment_name":"化工","segment_id":11609177,"stock_name":"恒力石化","stock_symbol":"SH600346","segment_color":"#5ea180","proactive":false,"volume":0.00104429,"textname":"undefined(SH600346)","url":"/S/SH600346"},{"stock_id":1028108,"weight":5.33,"segment_name":"食品饮料","segment_id":11609184,"stock_name":"安井食品","stock_symbol":"SH603345","segment_color":"#ecad32","proactive":false,"volume":0.00017862,"textname":"undefined(SH603345)","url":"/S/SH603345"},{"stock_id":1002268,"weight":5.15,"segment_name":"农林牧渔","segment_id":11803622,"stock_name":"牧原股份","stock_symbol":"SZ002714","segment_color":"#dbbd45","proactive":false,"volume":0.00036038,"textname":"undefined(SZ002714)","url":"/S/SZ002714"},{"stock_id":1038420,"weight":4.68,"segment_name":"医药生物","segment_id":11609178,"stock_name":"爱美客","stock_symbol":"SZ300896","segment_color":"#2bb98f","proactive":false,"volume":0.00007421,"textname":"undefined(SZ300896)","url":"/S/SZ300896"},{"stock_id":1000366,"weight":5.13,"segment_name":"医药生物","segment_id":11609178,"stock_name":"片仔癀","stock_symbol":"SH600436","segment_color":"#2bb98f","proactive":false,"volume":0.0001232,"textname":"undefined(SH600436)","url":"/S/SH600436"},{"stock_id":1030461,"weight":5.49,"segment_name":"医药生物","segment_id":11609178,"stock_name":"药明康德","stock_symbol":"SH603259","segment_color":"#2bb98f","proactive":false,"volume":0.00027735,"textname":"undefined(SH603259)","url":"/S/SH603259"},{"stock_id":1002127,"weight":6.19,"segment_name":"轻工制造","segment_id":11803621,"stock_name":"索菲亚","stock_symbol":"SZ002572","segment_color":"#e0b256","proactive":false,"volume":0.00129695,"textname":"undefined(SZ002572)","url":"/S/SZ002572"},{"stock_id":1000646,"weight":4.71,"segment_name":"医药生物","segment_id":11609178,"stock_name":"通策医疗","stock_symbol":"SH600763","segment_color":"#2bb98f","proactive":false,"volume":0.00012569,"textname":"undefined(SH600763)","url":"/S/SH600763"},{"stock_id":1030646,"weight":5.31,"segment_name":"电气设备","segment_id":11609183,"stock_name":"宁德时代","stock_symbol":"SZ300750","segment_color":"#0055aa","proactive":false,"volume":0.00011847,"textname":"undefined(SZ300750)","url":"/S/SZ300750"},{"stock_id":1000367,"weight":4.11,"segment_name":"电气设备","segment_id":11609183,"stock_name":"通威股份","stock_symbol":"SH600438","segment_color":"#0055aa","proactive":false,"volume":0.00090978,"textname":"undefined(SH600438)","url":"/S/SH600438"},{"stock_id":1032246,"weight":5.21,"segment_name":"机械设备","segment_id":11609180,"stock_name":"上机数控","stock_symbol":"SH603185","segment_color":"#927f60","proactive":false,"volume":0.00028565,"textname":"undefined(SH603185)","url":"/S/SH603185"},{"stock_id":1000917,"weight":5.68,"segment_name":"休闲服务","segment_id":11803624,"stock_name":"中国中免","stock_symbol":"SH601888","segment_color":"#e87f30","proactive":false,"volume":0.00012633,"textname":"undefined(SH601888)","url":"/S/SH601888"},{"stock_id":1000265,"weight":4.99,"segment_name":"化工","segment_id":11609177,"stock_name":"万华化学","stock_symbol":"SH600309","segment_color":"#5ea180","proactive":false,"volume":0.00033165,"textname":"undefined(SH600309)","url":"/S/SH600309"}],"rebalancing_histories":[],"comment":null,"diff":0,"new_buy_count":0},"last_rebalancing":{"id":90516909,"status":"success","cube_id":2455786,"prev_bebalancing_id":89350831,"category":"sys_rebalancing","exe_strategy":"market_all","created_at":1615853026120,"updated_at":1615853026120,"cash":0,"error_code":null,"cash_value":0.00001889,"error_message":"你上一笔调仓已成交。","error_status":null,"holdings":[{"stock_id":1000817,"weight":4.73,"segment_name":"电气设备","segment_id":11609183,"stock_name":"隆基股份","stock_symbol":"SH601012","segment_color":"#0055aa","proactive":false,"volume":0.00039499},{"stock_id":1001160,"weight":4.86,"segment_name":"汽车","segment_id":11609181,"stock_name":"潍柴动力","stock_symbol":"SZ000338","segment_color":"#537299","proactive":false,"volume":0.00186316},{"stock_id":1000572,"weight":6.13,"segment_name":"国防军工","segment_id":11609179,"stock_name":"中船防务","stock_symbol":"SH600685","segment_color":"#7b9948","proactive":false,"volume":0.0018036},{"stock_id":1000920,"weight":4.39,"segment_name":"有色金属","segment_id":11803623,"stock_name":"紫金矿业","stock_symbol":"SH601899","segment_color":"#6b8a6b","proactive":false,"volume":0.00321266},{"stock_id":1000024,"weight":4.91,"segment_name":"机械设备","segment_id":11609180,"stock_name":"三一重工","stock_symbol":"SH600031","segment_color":"#927f60","proactive":false,"volume":0.00103149},{"stock_id":1002149,"weight":4.32,"segment_name":"汽车","segment_id":11609181,"stock_name":"比亚迪","stock_symbol":"SZ002594","segment_color":"#537299","proactive":false,"volume":0.00018227},{"stock_id":1001908,"weight":4.5,"segment_name":"交通运输","segment_id":11803625,"stock_name":"顺丰控股","stock_symbol":"SZ002352","segment_color":"#4db6e0","proactive":false,"volume":0.00040193},{"stock_id":1000296,"weight":4.18,"segment_name":"化工","segment_id":11609177,"stock_name":"恒力石化","stock_symbol":"SH600346","segment_color":"#5ea180","proactive":false,"volume":0.00104429},{"stock_id":1028108,"weight":5.33,"segment_name":"食品饮料","segment_id":11609184,"stock_name":"安井食品","stock_symbol":"SH603345","segment_color":"#ecad32","proactive":false,"volume":0.00017862},{"stock_id":1002268,"weight":5.15,"segment_name":"农林牧渔","segment_id":11803622,"stock_name":"牧原股份","stock_symbol":"SZ002714","segment_color":"#dbbd45","proactive":false,"volume":0.00036038},{"stock_id":1038420,"weight":4.68,"segment_name":"医药生物","segment_id":11609178,"stock_name":"爱美客","stock_symbol":"SZ300896","segment_color":"#2bb98f","proactive":false,"volume":0.00007421},{"stock_id":1000366,"weight":5.13,"segment_name":"医药生物","segment_id":11609178,"stock_name":"片仔癀","stock_symbol":"SH600436","segment_color":"#2bb98f","proactive":false,"volume":0.0001232},{"stock_id":1030461,"weight":5.49,"segment_name":"医药生物","segment_id":11609178,"stock_name":"药明康德","stock_symbol":"SH603259","segment_color":"#2bb98f","proactive":false,"volume":0.00027735},{"stock_id":1002127,"weight":6.19,"segment_name":"轻工制造","segment_id":11803621,"stock_name":"索菲亚","stock_symbol":"SZ002572","segment_color":"#e0b256","proactive":false,"volume":0.00129695},{"stock_id":1000646,"weight":4.71,"segment_name":"医药生物","segment_id":11609178,"stock_name":"通策医疗","stock_symbol":"SH600763","segment_color":"#2bb98f","proactive":false,"volume":0.00012569},{"stock_id":1030646,"weight":5.31,"segment_name":"电气设备","segment_id":11609183,"stock_name":"宁德时代","stock_symbol":"SZ300750","segment_color":"#0055aa","proactive":false,"volume":0.00011847},{"stock_id":1000367,"weight":4.11,"segment_name":"电气设备","segment_id":11609183,"stock_name":"通威股份","stock_symbol":"SH600438","segment_color":"#0055aa","proactive":false,"volume":0.00090978},{"stock_id":1032246,"weight":5.21,"segment_name":"机械设备","segment_id":11609180,"stock_name":"上机数控","stock_symbol":"SH603185","segment_color":"#927f60","proactive":false,"volume":0.00028565},{"stock_id":1000917,"weight":5.68,"segment_name":"休闲服务","segment_id":11803624,"stock_name":"中国中免","stock_symbol":"SH601888","segment_color":"#e87f30","proactive":false,"volume":0.00012633},{"stock_id":1000265,"weight":4.99,"segment_name":"化工","segment_id":11609177,"stock_name":"万华化学","stock_symbol":"SH600309","segment_color":"#5ea180","proactive":false,"volume":0.00033165}],"rebalancing_histories":[],"comment":null,"diff":0,"new_buy_count":0},"last_success_rebalancing":{"id":90516909,"status":"success","cube_id":2455786,"prev_bebalancing_id":89350831,"category":"sys_rebalancing","exe_strategy":"market_all","created_at":1615853026120,"updated_at":1615853026120,"cash":0,"error_code":null,"cash_value":0.00001889,"error_message":"你上一笔调仓已成交。","error_status":null,"holdings":[{"stock_id":1000817,"weight":4.73,"segment_name":"电气设备","segment_id":11609183,"stock_name":"隆基股份","stock_symbol":"SH601012","segment_color":"#0055aa","proactive":false,"volume":0.00039499},{"stock_id":1001160,"weight":4.86,"segment_name":"汽车","segment_id":11609181,"stock_name":"潍柴动力","stock_symbol":"SZ000338","segment_color":"#537299","proactive":false,"volume":0.00186316},{"stock_id":1000572,"weight":6.13,"segment_name":"国防军工","segment_id":11609179,"stock_name":"中船防务","stock_symbol":"SH600685","segment_color":"#7b9948","proactive":false,"volume":0.0018036},{"stock_id":1000920,"weight":4.39,"segment_name":"有色金属","segment_id":11803623,"stock_name":"紫金矿业","stock_symbol":"SH601899","segment_color":"#6b8a6b","proactive":false,"volume":0.00321266},{"stock_id":1000024,"weight":4.91,"segment_name":"机械设备","segment_id":11609180,"stock_name":"三一重工","stock_symbol":"SH600031","segment_color":"#927f60","proactive":false,"volume":0.00103149},{"stock_id":1002149,"weight":4.32,"segment_name":"汽车","segment_id":11609181,"stock_name":"比亚迪","stock_symbol":"SZ002594","segment_color":"#537299","proactive":false,"volume":0.00018227},{"stock_id":1001908,"weight":4.5,"segment_name":"交通运输","segment_id":11803625,"stock_name":"顺丰控股","stock_symbol":"SZ002352","segment_color":"#4db6e0","proactive":false,"volume":0.00040193},{"stock_id":1000296,"weight":4.18,"segment_name":"化工","segment_id":11609177,"stock_name":"恒力石化","stock_symbol":"SH600346","segment_color":"#5ea180","proactive":false,"volume":0.00104429},{"stock_id":1028108,"weight":5.33,"segment_name":"食品饮料","segment_id":11609184,"stock_name":"安井食品","stock_symbol":"SH603345","segment_color":"#ecad32","proactive":false,"volume":0.00017862},{"stock_id":1002268,"weight":5.15,"segment_name":"农林牧渔","segment_id":11803622,"stock_name":"牧原股份","stock_symbol":"SZ002714","segment_color":"#dbbd45","proactive":false,"volume":0.00036038},{"stock_id":1038420,"weight":4.68,"segment_name":"医药生物","segment_id":11609178,"stock_name":"爱美客","stock_symbol":"SZ300896","segment_color":"#2bb98f","proactive":false,"volume":0.00007421},{"stock_id":1000366,"weight":5.13,"segment_name":"医药生物","segment_id":11609178,"stock_name":"片仔癀","stock_symbol":"SH600436","segment_color":"#2bb98f","proactive":false,"volume":0.0001232},{"stock_id":1030461,"weight":5.49,"segment_name":"医药生物","segment_id":11609178,"stock_name":"药明康德","stock_symbol":"SH603259","segment_color":"#2bb98f","proactive":false,"volume":0.00027735},{"stock_id":1002127,"weight":6.19,"segment_name":"轻工制造","segment_id":11803621,"stock_name":"索菲亚","stock_symbol":"SZ002572","segment_color":"#e0b256","proactive":false,"volume":0.00129695},{"stock_id":1000646,"weight":4.71,"segment_name":"医药生物","segment_id":11609178,"stock_name":"通策医疗","stock_symbol":"SH600763","segment_color":"#2bb98f","proactive":false,"volume":0.00012569},{"stock_id":1030646,"weight":5.31,"segment_name":"电气设备","segment_id":11609183,"stock_name":"宁德时代","stock_symbol":"SZ300750","segment_color":"#0055aa","proactive":false,"volume":0.00011847},{"stock_id":1000367,"weight":4.11,"segment_name":"电气设备","segment_id":11609183,"stock_name":"通威股份","stock_symbol":"SH600438","segment_color":"#0055aa","proactive":false,"volume":0.00090978},{"stock_id":1032246,"weight":5.21,"segment_name":"机械设备","segment_id":11609180,"stock_name":"上机数控","stock_symbol":"SH603185","segment_color":"#927f60","proactive":false,"volume":0.00028565},{"stock_id":1000917,"weight":5.68,"segment_name":"休闲服务","segment_id":11803624,"stock_name":"中国中免","stock_symbol":"SH601888","segment_color":"#e87f30","proactive":false,"volume":0.00012633},{"stock_id":1000265,"weight":4.99,"segment_name":"化工","segment_id":11609177,"stock_name":"万华化学","stock_symbol":"SH600309","segment_color":"#5ea180","proactive":false,"volume":0.00033165}],"rebalancing_histories":[],"comment":null,"diff":0,"new_buy_count":0},"style":{"name":"上蹿下跳","color0":"#edbf05","color1":"#f6ad00","degree":30},"tag":null,"recommend_reason":null,"sale_flag":false,"sell_flag":false,"commission":null,"initial_capital":null,"listed_flag":false,"contractor_id":null,"contractor_name":null,"last_user_rb_gid":89350831,"owner":{"subscribeable":false,"common_count":0,"remark":null,"recommend_reason":null,"recommend":null,"followers_count":0,"friends_count":5,"st_color":"1","follow_me":false,"verified":null,"intro":null,"stock_status_count":null,"gender":null,"province":null,"city":null,"blog_description":null,"verified_type":null,"verified_description":null,"screen_name":"klou5icky","step":"null","blocking":false,"last_status_id":0,"status_count":0,"donate_count":0,"allow_all_stock":false,"stocks_count":null,"domain":null,"description":null,"name":null,"location":null,"id":5000292639,"type":"1","status":0,"profile":"/5000292639","following":false,"url":null,"verified_infos":[],"group_ids":null,"name_pinyin":null,"screenname_pinyin":null,"profile_image_url":"community/default/avatar.png,community/default/avatar.png!180x180.png,community/default/avatar.png!50x50.png,community/default/avatar.png!30x30.png","photo_domain":"//xavatar.imedao.com/"},"performance":{"top_gainer_symbol":"SH603345","top_gainer_name":"安井食品","gain_count":0,"loss_count":2},"closed_at":null,"badges_exist":false,"game_id":0,"sell_rebalancing":{"id":89350831,"status":"success","cube_id":2455786,"prev_bebalancing_id":88138193,"category":"user_rebalancing","exe_strategy":"intraday_all","created_at":1613920464819,"updated_at":1613957659821,"cash":0,"error_code":null,"cash_value":0.00001889,"error_message":"你上一笔调仓已成交。","error_status":null,"holdings":null,"rebalancing_histories":[{"id":233841431,"rebalancing_id":89350831,"stock_id":1000817,"stock_name":"隆基股份","stock_symbol":"SH601012","volume":0.00039499,"price":117.12,"net_value":0.0463,"weight":5,"target_weight":5,"prev_weight":5,"prev_target_weight":5,"prev_weight_adjusted":5.17,"prev_volume":0.00040822,"prev_price":122.48,"prev_net_value":0.04999878,"proactive":true,"created_at":1613957659821,"updated_at":1613957659821,"target_volume":0.00039499,"prev_target_volume":0.00040822},{"id":233841432,"rebalancing_id":89350831,"stock_id":1055247,"stock_name":"石头科技","stock_symbol":"SH688169","volume":0,"price":1050.01,"net_value":0,"weight":0,"target_weight":0,"prev_weight":5,"prev_target_weight":5,"prev_weight_adjusted":4.7,"prev_volume":0.00004139,"prev_price":1208,"prev_net_value":0.04999912,"proactive":true,"created_at":1613957659821,"updated_at":1613957659821,"target_volume":0,"prev_target_volume":0.00004139},{"id":233841433,"rebalancing_id":89350831,"stock_id":1000766,"stock_name":"航发动力","stock_symbol":"SH600893","volume":0,"price":62,"net_value":0,"weight":0,"target_weight":0,"prev_weight":5,"prev_target_weight":5,"prev_weight_adjusted":4.33,"prev_volume":0.00064641,"prev_price":77.35,"prev_net_value":0.04999981,"proactive":true,"created_at":1613957659821,"updated_at":1613957659821,"target_volume":0,"prev_target_volume":0.00064641},{"id":233841434,"rebalancing_id":89350831,"stock_id":1028863,"stock_name":"华大基因","stock_symbol":"SZ300676","volume":0,"price":147.74,"net_value":0,"weight":0,"target_weight":0,"prev_weight":5,"prev_target_weight":5,"prev_weight_adjusted":4.57,"prev_volume":0.00028635,"prev_price":174.61,"prev_net_value":0.04999957,"proactive":true,"created_at":1613957659821,"updated_at":1613957659821,"target_volume":0,"prev_target_volume":0.00028635},{"id":233841435,"rebalancing_id":89350831,"stock_id":1001971,"stock_name":"海康威视","stock_symbol":"SZ002415","volume":0,"price":60.43,"net_value":0,"weight":0,"target_weight":0,"prev_weight":5,"prev_target_weight":5,"prev_weight_adjusted":5,"prev_volume":0.00076628,"prev_price":65.25,"prev_net_value":0.04999977,"proactive":true,"created_at":1613957659821,"updated_at":1613957659821,"target_volume":0,"prev_target_volume":0.00076628},{"id":233841436,"rebalancing_id":89350831,"stock_id":1003146,"stock_name":"亿纬锂能","stock_symbol":"SZ300014","volume":0,"price":98.79,"net_value":0,"weight":0,"target_weight":0,"prev_weight":5,"prev_target_weight":5,"prev_weight_adjusted":4.62,"prev_volume":0.0004326,"prev_price":115.58,"prev_net_value":0.0499999,"proactive":true,"created_at":1613957659821,"updated_at":1613957659821,"target_volume":0,"prev_target_volume":0.0004326},{"id":233841437,"rebalancing_id":89350831,"stock_id":1000826,"stock_name":"恒立液压","stock_symbol":"SH601100","volume":0,"price":111.71,"net_value":0,"weight":0,"target_weight":0,"prev_weight":5,"prev_target_weight":5,"prev_weight_adjusted":4.72,"prev_volume":0.0003908,"prev_price":127.94,"prev_net_value":0.04999895,"proactive":true,"created_at":1613957659821,"updated_at":1613957659821,"target_volume":0,"prev_target_volume":0.0003908},{"id":233841438,"rebalancing_id":89350831,"stock_id":1000024,"stock_name":"三一重工","stock_symbol":"SH600031","volume":0.00103149,"price":44.85,"net_value":0.0463,"weight":5,"target_weight":5,"prev_weight":5,"prev_target_weight":5,"prev_weight_adjusted":5.92,"prev_volume":0.00122129,"prev_price":40.94,"prev_net_value":0.04999961,"proactive":true,"created_at":1613957659821,"updated_at":1613957659821,"target_volume":0.00103149,"prev_target_volume":0.00122129},{"id":233841439,"rebalancing_id":89350831,"stock_id":1002149,"stock_name":"比亚迪","stock_symbol":"SZ002594","volume":0.00018227,"price":253.8,"net_value":0.0463,"weight":5,"target_weight":5,"prev_weight":5,"prev_target_weight":5,"prev_weight_adjusted":5.5,"prev_volume":0.00020036,"prev_price":249.55,"prev_net_value":0.04999983,"proactive":true,"created_at":1613957659821,"updated_at":1613957659821,"target_volume":0.00018227,"prev_target_volume":0.00020036},{"id":233841440,"rebalancing_id":89350831,"stock_id":1055224,"stock_name":"金山办公","stock_symbol":"SH688111","volume":0,"price":398.03,"net_value":0,"weight":0,"target_weight":0,"prev_weight":5,"prev_target_weight":5,"prev_weight_adjusted":4.44,"prev_volume":0.00010325,"prev_price":484.23,"prev_net_value":0.04999674,"proactive":true,"created_at":1613957659821,"updated_at":1613957659821,"target_volume":0,"prev_target_volume":0.00010325},{"id":233841441,"rebalancing_id":89350831,"stock_id":1000296,"stock_name":"恒力石化","stock_symbol":"SH600346","volume":0.00104429,"price":44.3,"net_value":0.0463,"weight":5,"target_weight":5,"prev_weight":5,"prev_target_weight":5,"prev_weight_adjusted":5.54,"prev_volume":0.0011574,"prev_price":43.2,"prev_net_value":0.04999968,"proactive":true,"created_at":1613957659821,"updated_at":1613957659821,"target_volume":0.00104429,"prev_target_volume":0.0011574},{"id":233841442,"rebalancing_id":89350831,"stock_id":1028108,"stock_name":"安井食品","stock_symbol":"SH603345","volume":0.00017862,"price":258.99,"net_value":0.0463,"weight":5,"target_weight":5,"prev_weight":5,"prev_target_weight":5,"prev_weight_adjusted":6.59,"prev_volume":0.00023531,"prev_price":212.48,"prev_net_value":0.04999866,"proactive":true,"created_at":1613957659821,"updated_at":1613957659821,"target_volume":0.00017862,"prev_target_volume":0.00023531},{"id":233841443,"rebalancing_id":89350831,"stock_id":1028916,"stock_name":"英科医疗","stock_symbol":"SZ300677","volume":0,"price":202.34,"net_value":0,"weight":0,"target_weight":0,"prev_weight":5,"prev_target_weight":5,"prev_weight_adjusted":4.07,"prev_volume":0.00018601,"prev_price":268.8,"prev_net_value":0.04999948,"proactive":true,"created_at":1613957659821,"updated_at":1613957659821,"target_volume":0,"prev_target_volume":0.00018601},{"id":233841444,"rebalancing_id":89350831,"stock_id":1029163,"stock_name":"金域医学","stock_symbol":"SH603882","volume":0,"price":142.1,"net_value":0,"weight":0,"target_weight":0,"prev_weight":5,"prev_target_weight":5,"prev_weight_adjusted":4.43,"prev_volume":0.00028863,"prev_price":173.23,"prev_net_value":0.04999937,"proactive":true,"created_at":1613957659821,"updated_at":1613957659821,"target_volume":0,"prev_target_volume":0.00028863},{"id":233841445,"rebalancing_id":89350831,"stock_id":1030461,"stock_name":"药明康德","stock_symbol":"SH603259","volume":0.00027735,"price":166.8,"net_value":0.0463,"weight":5,"target_weight":5,"prev_weight":5,"prev_target_weight":5,"prev_weight_adjusted":5.16,"prev_volume":0.00028604,"prev_price":174.8,"prev_net_value":0.04999979,"proactive":true,"created_at":1613957659821,"updated_at":1613957659821,"target_volume":0.00027735,"prev_target_volume":0.00028604},{"id":233841446,"rebalancing_id":89350831,"stock_id":1030646,"stock_name":"宁德时代","stock_symbol":"SZ300750","volume":0.00011847,"price":390.48,"net_value":0.0463,"weight":5,"target_weight":5,"prev_weight":5,"prev_target_weight":5,"prev_weight_adjusted":5.11,"prev_volume":0.00012118,"prev_price":412.6,"prev_net_value":0.04999886,"proactive":true,"created_at":1613957659821,"updated_at":1613957659821,"target_volume":0.00011847,"prev_target_volume":0.00012118},{"id":233841447,"rebalancing_id":89350831,"stock_id":1000367,"stock_name":"通威股份","stock_symbol":"SH600438","volume":0.00090978,"price":50.85,"net_value":0.0463,"weight":5,"target_weight":5,"prev_weight":5,"prev_target_weight":5,"prev_weight_adjusted":5.99,"prev_volume":0.00108932,"prev_price":45.9,"prev_net_value":0.04999978,"proactive":true,"created_at":1613957659821,"updated_at":1613957659821,"target_volume":0.00090978,"prev_target_volume":0.00108932},{"id":233841448,"rebalancing_id":89350831,"stock_id":1001970,"stock_name":"高德红外","stock_symbol":"SZ002414","volume":0,"price":40.85,"net_value":0,"weight":0,"target_weight":0,"prev_weight":5,"prev_target_weight":5,"prev_weight_adjusted":4.53,"prev_volume":0.00102627,"prev_price":48.72,"prev_net_value":0.04999987,"proactive":true,"created_at":1613957659821,"updated_at":1613957659821,"target_volume":0,"prev_target_volume":0.00102627},{"id":233841449,"rebalancing_id":89350831,"stock_id":1032246,"stock_name":"上机数控","stock_symbol":"SH603185","volume":0.00028565,"price":161.95,"net_value":0.0463,"weight":5,"target_weight":5,"prev_weight":5,"prev_target_weight":5,"prev_weight_adjusted":4.97,"prev_volume":0.0002841,"prev_price":175.99,"prev_net_value":0.04999875,"proactive":true,"created_at":1613957659821,"updated_at":1613957659821,"target_volume":0.00028565,"prev_target_volume":0.0002841},{"id":233841450,"rebalancing_id":89350831,"stock_id":1000572,"stock_name":"中船防务","stock_symbol":"SH600685","volume":0.0018036,"price":25.65,"net_value":0.0463,"weight":5,"target_weight":5,"prev_weight":5,"prev_target_weight":5,"prev_weight_adjusted":4.64,"prev_volume":0.00167392,"prev_price":29.87,"prev_net_value":0.04999999,"proactive":true,"created_at":1613957659821,"updated_at":1613957659821,"target_volume":0.0018036,"prev_target_volume":0.00167392},{"id":233841451,"rebalancing_id":89350831,"stock_id":1000646,"stock_name":"通策医疗","stock_symbol":"SH600763","volume":0.00012569,"price":368.04,"net_value":0.0463,"weight":5,"target_weight":5,"prev_weight":null,"prev_target_weight":null,"prev_weight_adjusted":null,"prev_volume":null,"prev_price":null,"prev_net_value":null,"proactive":true,"created_at":1613957659821,"updated_at":1613957659821,"target_volume":0.00012569,"prev_target_volume":null},{"id":233841452,"rebalancing_id":89350831,"stock_id":1038420,"stock_name":"爱美客","stock_symbol":"SZ300896","volume":0.00004112,"price":1125,"net_value":0.0463,"weight":5,"target_weight":5,"prev_weight":null,"prev_target_weight":null,"prev_weight_adjusted":null,"prev_volume":null,"prev_price":null,"prev_net_value":null,"proactive":true,"created_at":1613957659821,"updated_at":1613957659821,"target_volume":0.00004112,"prev_target_volume":null},{"id":233841453,"rebalancing_id":89350831,"stock_id":1000917,"stock_name":"中国中免","stock_symbol":"SH601888","volume":0.00012633,"price":366.19,"net_value":0.0463,"weight":5,"target_weight":5,"prev_weight":null,"prev_target_weight":null,"prev_weight_adjusted":null,"prev_volume":null,"prev_price":null,"prev_net_value":null,"proactive":true,"created_at":1613957659821,"updated_at":1613957659821,"target_volume":0.00012633,"prev_target_volume":null},{"id":233841454,"rebalancing_id":89350831,"stock_id":1000366,"stock_name":"片仔癀","stock_symbol":"SH600436","volume":0.0001232,"price":375.5,"net_value":0.0463,"weight":5,"target_weight":5,"prev_weight":null,"prev_target_weight":null,"prev_weight_adjusted":null,"prev_volume":null,"prev_price":null,"prev_net_value":null,"proactive":true,"created_at":1613957659821,"updated_at":1613957659821,"target_volume":0.0001232,"prev_target_volume":null},{"id":233841455,"rebalancing_id":89350831,"stock_id":1000265,"stock_name":"万华化学","stock_symbol":"SH600309","volume":0.00033165,"price":139.49,"net_value":0.0463,"weight":5,"target_weight":5,"prev_weight":null,"prev_target_weight":null,"prev_weight_adjusted":null,"prev_volume":null,"prev_price":null,"prev_net_value":null,"proactive":true,"created_at":1613957659821,"updated_at":1613957659821,"target_volume":0.00033165,"prev_target_volume":null},{"id":233841456,"rebalancing_id":89350831,"stock_id":1002268,"stock_name":"牧原股份","stock_symbol":"SZ002714","volume":0.00036038,"price":128.37,"net_value":0.0463,"weight":5,"target_weight":5,"prev_weight":null,"prev_target_weight":null,"prev_weight_adjusted":null,"prev_volume":null,"prev_price":null,"prev_net_value":null,"proactive":true,"created_at":1613957659821,"updated_at":1613957659821,"target_volume":0.00036038,"prev_target_volume":null},{"id":233841457,"rebalancing_id":89350831,"stock_id":1001908,"stock_name":"顺丰控股","stock_symbol":"SZ002352","volume":0.00040193,"price":115.1,"net_value":0.0463,"weight":5,"target_weight":5,"prev_weight":null,"prev_target_weight":null,"prev_weight_adjusted":null,"prev_volume":null,"prev_price":null,"prev_net_value":null,"proactive":true,"created_at":1613957659821,"updated_at":1613957659821,"target_volume":0.00040193,"prev_target_volume":null},{"id":233841458,"rebalancing_id":89350831,"stock_id":1002127,"stock_name":"索菲亚","stock_symbol":"SZ002572","volume":0.00129695,"price":35.67,"net_value":0.0463,"weight":5,"target_weight":5,"prev_weight":null,"prev_target_weight":null,"prev_weight_adjusted":null,"prev_volume":null,"prev_price":null,"prev_net_value":null,"proactive":true,"created_at":1613957659821,"updated_at":1613957659821,"target_volume":0.00129695,"prev_target_volume":null},{"id":233841459,"rebalancing_id":89350831,"stock_id":1001160,"stock_name":"潍柴动力","stock_symbol":"SZ000338","volume":0.00186316,"price":24.83,"net_value":0.0463,"weight":5,"target_weight":5,"prev_weight":null,"prev_target_weight":null,"prev_weight_adjusted":null,"prev_volume":null,"prev_price":null,"prev_net_value":null,"proactive":true,"created_at":1613957659821,"updated_at":1613957659821,"target_volume":0.00186316,"prev_target_volume":null},{"id":233841460,"rebalancing_id":89350831,"stock_id":1000920,"stock_name":"紫金矿业","stock_symbol":"SH601899","volume":0.00321266,"price":14.4,"net_value":0.0463,"weight":5,"target_weight":5,"prev_weight":null,"prev_target_weight":null,"prev_weight_adjusted":null,"prev_volume":null,"prev_price":null,"prev_net_value":null,"proactive":true,"created_at":1613957659821,"updated_at":1613957659821,"target_volume":0.00321266,"prev_target_volume":null}],"comment":"","diff":67.01,"new_buy_count":10,"updated_at_format":"2021.2.21 23:14"},"created_date":"2021.01.25","created_date_format":"2021-01-25","close_date":"","authorized_visible":true};
+SNB.cubePieData = [{"name":"有色金属","weight":4.39,"color":"#6b8a6b"},{"name":"交通运输","weight":4.5,"color":"#4db6e0"},{"name":"农林牧渔","weight":5.15,"color":"#dbbd45"},{"name":"食品饮料","weight":5.33,"color":"#ecad32"},{"name":"休闲服务","weight":5.68,"color":"#e87f30"},{"name":"国防军工","weight":6.13,"color":"#7b9948"},{"name":"轻工制造","weight":6.19,"color":"#e0b256"},{"name":"化工","weight":9.17,"color":"#5ea180"},{"name":"汽车","weight":9.18,"color":"#537299"},{"name":"机械设备","weight":10.120000000000001,"color":"#927f60"},{"name":"电气设备","weight":14.149999999999999,"color":"#0055aa"},{"name":"医药生物","weight":20.009999999999998,"color":"#2bb98f"}];
+SNB.cubeTreeData = {"电气设备":{"name":"电气设备","weight":14.149999999999999,"color":"#0055aa","stocks":[{"stock_id":1000817,"weight":4.73,"segment_name":"电气设备","segment_id":11609183,"stock_name":"隆基股份","stock_symbol":"SH601012","segment_color":"#0055aa","proactive":false,"volume":0.00039499,"textname":"undefined(SH601012)","url":"/S/SH601012"},{"stock_id":1030646,"weight":5.31,"segment_name":"电气设备","segment_id":11609183,"stock_name":"宁德时代","stock_symbol":"SZ300750","segment_color":"#0055aa","proactive":false,"volume":0.00011847,"textname":"undefined(SZ300750)","url":"/S/SZ300750"},{"stock_id":1000367,"weight":4.11,"segment_name":"电气设备","segment_id":11609183,"stock_name":"通威股份","stock_symbol":"SH600438","segment_color":"#0055aa","proactive":false,"volume":0.00090978,"textname":"undefined(SH600438)","url":"/S/SH600438"}]},"汽车":{"name":"汽车","weight":9.18,"color":"#537299","stocks":[{"stock_id":1001160,"weight":4.86,"segment_name":"汽车","segment_id":11609181,"stock_name":"潍柴动力","stock_symbol":"SZ000338","segment_color":"#537299","proactive":false,"volume":0.00186316,"textname":"undefined(SZ000338)","url":"/S/SZ000338"},{"stock_id":1002149,"weight":4.32,"segment_name":"汽车","segment_id":11609181,"stock_name":"比亚迪","stock_symbol":"SZ002594","segment_color":"#537299","proactive":false,"volume":0.00018227,"textname":"undefined(SZ002594)","url":"/S/SZ002594"}]},"国防军工":{"name":"国防军工","weight":6.13,"color":"#7b9948","stocks":[{"stock_id":1000572,"weight":6.13,"segment_name":"国防军工","segment_id":11609179,"stock_name":"中船防务","stock_symbol":"SH600685","segment_color":"#7b9948","proactive":false,"volume":0.0018036,"textname":"undefined(SH600685)","url":"/S/SH600685"}]},"有色金属":{"name":"有色金属","weight":4.39,"color":"#6b8a6b","stocks":[{"stock_id":1000920,"weight":4.39,"segment_name":"有色金属","segment_id":11803623,"stock_name":"紫金矿业","stock_symbol":"SH601899","segment_color":"#6b8a6b","proactive":false,"volume":0.00321266,"textname":"undefined(SH601899)","url":"/S/SH601899"}]},"机械设备":{"name":"机械设备","weight":10.120000000000001,"color":"#927f60","stocks":[{"stock_id":1000024,"weight":4.91,"segment_name":"机械设备","segment_id":11609180,"stock_name":"三一重工","stock_symbol":"SH600031","segment_color":"#927f60","proactive":false,"volume":0.00103149,"textname":"undefined(SH600031)","url":"/S/SH600031"},{"stock_id":1032246,"weight":5.21,"segment_name":"机械设备","segment_id":11609180,"stock_name":"上机数控","stock_symbol":"SH603185","segment_color":"#927f60","proactive":false,"volume":0.00028565,"textname":"undefined(SH603185)","url":"/S/SH603185"}]},"交通运输":{"name":"交通运输","weight":4.5,"color":"#4db6e0","stocks":[{"stock_id":1001908,"weight":4.5,"segment_name":"交通运输","segment_id":11803625,"stock_name":"顺丰控股","stock_symbol":"SZ002352","segment_color":"#4db6e0","proactive":false,"volume":0.00040193,"textname":"undefined(SZ002352)","url":"/S/SZ002352"}]},"化工":{"name":"化工","weight":9.17,"color":"#5ea180","stocks":[{"stock_id":1000296,"weight":4.18,"segment_name":"化工","segment_id":11609177,"stock_name":"恒力石化","stock_symbol":"SH600346","segment_color":"#5ea180","proactive":false,"volume":0.00104429,"textname":"undefined(SH600346)","url":"/S/SH600346"},{"stock_id":1000265,"weight":4.99,"segment_name":"化工","segment_id":11609177,"stock_name":"万华化学","stock_symbol":"SH600309","segment_color":"#5ea180","proactive":false,"volume":0.00033165,"textname":"undefined(SH600309)","url":"/S/SH600309"}]},"食品饮料":{"name":"食品饮料","weight":5.33,"color":"#ecad32","stocks":[{"stock_id":1028108,"weight":5.33,"segment_name":"食品饮料","segment_id":11609184,"stock_name":"安井食品","stock_symbol":"SH603345","segment_color":"#ecad32","proactive":false,"volume":0.00017862,"textname":"undefined(SH603345)","url":"/S/SH603345"}]},"农林牧渔":{"name":"农林牧渔","weight":5.15,"color":"#dbbd45","stocks":[{"stock_id":1002268,"weight":5.15,"segment_name":"农林牧渔","segment_id":11803622,"stock_name":"牧原股份","stock_symbol":"SZ002714","segment_color":"#dbbd45","proactive":false,"volume":0.00036038,"textname":"undefined(SZ002714)","url":"/S/SZ002714"}]},"医药生物":{"name":"医药生物","weight":20.009999999999998,"color":"#2bb98f","stocks":[{"stock_id":1038420,"weight":4.68,"segment_name":"医药生物","segment_id":11609178,"stock_name":"爱美客","stock_symbol":"SZ300896","segment_color":"#2bb98f","proactive":false,"volume":0.00007421,"textname":"undefined(SZ300896)","url":"/S/SZ300896"},{"stock_id":1000366,"weight":5.13,"segment_name":"医药生物","segment_id":11609178,"stock_name":"片仔癀","stock_symbol":"SH600436","segment_color":"#2bb98f","proactive":false,"volume":0.0001232,"textname":"undefined(SH600436)","url":"/S/SH600436"},{"stock_id":1030461,"weight":5.49,"segment_name":"医药生物","segment_id":11609178,"stock_name":"药明康德","stock_symbol":"SH603259","segment_color":"#2bb98f","proactive":false,"volume":0.00027735,"textname":"undefined(SH603259)","url":"/S/SH603259"},{"stock_id":1000646,"weight":4.71,"segment_name":"医药生物","segment_id":11609178,"stock_name":"通策医疗","stock_symbol":"SH600763","segment_color":"#2bb98f","proactive":false,"volume":0.00012569,"textname":"undefined(SH600763)","url":"/S/SH600763"}]},"轻工制造":{"name":"轻工制造","weight":6.19,"color":"#e0b256","stocks":[{"stock_id":1002127,"weight":6.19,"segment_name":"轻工制造","segment_id":11803621,"stock_name":"索菲亚","stock_symbol":"SZ002572","segment_color":"#e0b256","proactive":false,"volume":0.00129695,"textname":"undefined(SZ002572)","url":"/S/SZ002572"}]},"休闲服务":{"name":"休闲服务","weight":5.68,"color":"#e87f30","stocks":[{"stock_id":1000917,"weight":5.68,"segment_name":"休闲服务","segment_id":11803624,"stock_name":"中国中免","stock_symbol":"SH601888","segment_color":"#e87f30","proactive":false,"volume":0.00012633,"textname":"undefined(SH601888)","url":"/S/SH601888"}]}};
+SNB.marketInfo = "{\"sp_pamid\":[{\"param\":\"dimension\",\"filter_values\":[{\"name\":\"总收益排行（沪深）\",\"value\":\"annual\"},{\"name\":\"月排行（沪深）\",\"value\":\"month\"},{\"name\":\"周排行（沪深）\",\"value\":\"daily\"}]}],\"updateTime\":1470105561000,\"hk\":[{\"param\":\"dimension\",\"filter_values\":[{\"name\":\"总收益排行（港股）\",\"value\":\"annual\"},{\"name\":\"月收益排行（港股）\",\"value\":\"month\"},{\"name\":\"日收益排行（港股）\",\"value\":\"daily\"}]}],\"cn\":[{\"param\":\"dimension\",\"filter_values\":[{\"name\":\"总收益排行（沪深）\",\"value\":\"annual\"},{\"name\":\"月收益排行（沪深）\",\"value\":\"month\"},{\"name\":\"日收益排行（沪深）\",\"value\":\"daily\"}]}],\"us\":[{\"param\":\"dimension\",\"filter_values\":[{\"name\":\"总收益排行（美股）\",\"value\":\"annual\"},{\"name\":\"月收益排行（美股）\",\"value\":\"month\"},{\"name\":\"日收益排行（美股）\",\"value\":\"daily\"}]}]}";
+seajs.use(['cube/cube_detail.js']);
+var pageId = window.location.pathname.split('/').pop();
+//- 页面进入统计
+var data = {
+  type: 1,
+  page: 48,
+  mod: 1,
+  data: {
+    symbol: pageId
+  }
+};
+Analytics(data);
+  </script>
+  <div class="regist-guide-container">
+   <div class="regist-guide-main">
+    <div class="regist-guide-text">
+     <p>
+      雪球社区汇集了千万投资者，提供沪深港美股票
+     </p>
+     <p>
+      实时行情、实战交流、实盘交易
+     </p>
+    </div>
+    <a class="regist-guide-button" href="">
+     30秒完成注册 &gt;
+    </a>
+   </div>
+  </div>
+  <div id="footer">
+   <div class="copyright">
+    <a href="/about/faq" target="_blank">
+     常见问题
+    </a>
+    <a href="/about/contact-us" target="_blank">
+     联系方式
+    </a>
+    <a href="/about/jobs" target="_blank">
+     加入我们
+    </a>
+    <a href="https://danjuanfunds.com/" target="_blank">
+     蛋卷基金
+    </a>
+    <a href="/about" target="_blank">
+     关于雪球
+    </a>
+    <a>
+     © 2021 XUEQIU.COM
+    </a>
+    <a>
+     北京雪球信息科技有限公司
+    </a>
+    <br/>
+    <p>
+     互联网违法和不良信息举报电话：01061840600-8030 邮箱：jubao@xueqiu.com
+     <a href="/law/tortreport" target="_blank">
+      侵权及不实信息举报指引
+     </a>
+    </p>
+    <a href="http://xqimg.imedao.com/14ee3530b118403fee048f5b.png" target="_blank">
+     京ICP证100666号
+    </a>
+    <a href="http://www.miibeian.gov.cn" target="_blank">
+     京ICP备10040543
+    </a>
+    <a>
+     京公网安备 11010502040379号
+    </a>
+    <p>
+     <a href="http://xqimg.imedao.com/14d52aefd15e8f3fc0ce1fbd.png" target="_blank">
+      证券业协会会员单位(代码817027)
+     </a>
+     <a href="http://xqimg.imedao.com/15ced2f59ab13fda8f10531f.jpg" rel="nofollow" target="_blank">
+      广播电视节目制作经营许可证: (京)字第08638号
+     </a>
+    </p>
+    <p>
+     风险提示：雪球里任何用户或者嘉宾的发言，都有其特定立场，投资决策需要建立在独立思考之上。
+    </p>
+   </div>
+  </div>
+  <script>
+   seajs.use(['widget/util/notice', 'widget/util/tooltip', 'widget/util/user', 'widget/util/regist-guide']);
+  </script>
+  <script>
+   //baidu tongji
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?1db88642e346389874251b5a1eded6e3";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+$('body').on('click','[data-track-event]',function(e){
+    if($(this).data('track-event')){
+      _hmt.push(['_trackEvent', $(this).data('track-event') , 'click', $(this).data('track-subevent')||'auto']);
+    }
+});
+//end baidu tongji
+//-google analytics
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-16079156-4']);
+_gaq.push(['_setDomainName', 'none']);
+_gaq.push(['_trackPageview']);
+
+(function () {
+  var ga = document.createElement('script');
+  ga.type = 'text/javascript';
+  ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(ga, s);
+})();
+
+window.onerror = function (message, file, line) {
+  var sFormattedMessage = '[' + file + ' (' + line + ')]' + message;
+  _gaq.push(['_trackEvent', 'Exceptions', 'Application', sFormattedMessage, null, true]);
+}
+//-end google analytics
+  </script>
+ </body>
+</html>
