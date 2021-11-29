@@ -1,4 +1,5 @@
 # XPT - XueqiuPortfolioTools
+**Latest research showed that Xueqiu had required login to view the portfolio page. This tool will no longer work.**
 
 This toolkit provides some useful functions to retreive information of Xueqiu Portfolios(组合).
 
